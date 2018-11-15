@@ -18,6 +18,10 @@ def cat_1(id):
 		'cat.html' )
 
 
+@app.route('/new_cat')
+def add_cat():
+	return render_template(
+		'new_cat.html')
 
 if __name__ == '__main__':
    app.run(debug = True)
