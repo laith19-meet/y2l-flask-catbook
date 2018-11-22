@@ -14,7 +14,7 @@ def catbook_home():
 
 @app.route('/cats/<int:id>')
 def cat_1(id):
-	return render_template(
+	return render_template(		
 		'cat.html' )
 
 
