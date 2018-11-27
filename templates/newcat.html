@@ -62,12 +62,12 @@
 
 
 <div class="container">
- <form action="/action_page.php">
+ <form action="/create" method="post">
   First name:<br>
-  <input type="text" name="firstname" value="firstname" >
+  <input type="text" name="firstname" name="firstname" >
   <br>
   Last name:<br>
-  <input type="text" name="lastname" value="last name">
+  <input type="text" name="lastname" name="last name">
   <br><br>
     <div class="checkbox">
       <label><input type="checkbox" > male</label>
@@ -77,8 +77,10 @@
     <div class="checkbox">
       <label><input type="checkbox" > female</label>
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+
+<a href={{ url_for ('submit_thanks')}} class="btn btn-primary">submit</a>
   </form>
 
 </body>
 </html>
+
